@@ -7,24 +7,72 @@
     <link href="./output.css" rel="stylesheet" />
 
     <!-- Custom Style -->
-     <style>
+    <style>
+      /* nav */
+      .nav {
+        background-color: #482a16;
+      }
+
       .padding-y {
         padding: 100px 160px;
       }
-      .msg-button{
+      .msg-button {
         width: 100%;
-        margin-top: 20px; 
-        
+        margin-top: 20px;
       }
-     </style>
+      .msg-button:hover {
+        background-color: #ffff;
+        color: #482a16;
+      }
+      .cover-img {
+        background-image: url("../media/hall.jpg");
+        height: 350px;
+      }
+
+      /* research */
+      .research {
+        background-color: #f2ede9;
+      }
+      /* books */
+      .books {
+        background-color: #e9e0d7;
+      }
+
+      /* articles */
+      .articles {
+        background-color: #f8f8f8;
+      }
+
+      /* footer */
+      .footer {
+        background-color: #482a16;
+      }
+
+      .msg-section {
+        width: 500px;
+      }
+      .text-area {
+        padding: 10px;
+        width: 100%;
+      }
+      .input-wid-pad {
+        width: 48%;
+        padding: 10px;
+      }
+      .left-margin {
+        margin-left: 15.5px;
+      }
+      .email-margin{
+        margin: 20px 0
+      }
+    </style>
   </head>
   <body>
     <header>
       <!-- nav bar -->
       <nav>
         <div
-          class="flex justify-between items-center px-12 py-2 text-white"
-          style="background-color: #482a16"
+          class="flex justify-between items-center px-12 py-2 text-white nav"
         >
           <div>
             <a class="text-4xl font-bold" href="./"
@@ -46,10 +94,7 @@
     <!-- main section -->
     <main>
       <!-- cover -->
-      <div
-        class="bg-cover bg-no-repeat relative"
-        style="background-image: url('../media/hall.jpg'); height: 350px"
-      >
+      <div class="bg-cover bg-no-repeat relative cover-img">
         <!-- profile section -->
         <section class="flex justify-between px-40 absolute top-56">
           <div class="">
@@ -93,14 +138,7 @@
       </div>
 
       <!-- Reasearch Interests -->
-      <div
-        class="flex justify-between mt-80 padding-y"
-        style="
-          /* padding-top: 100px;
-          padding-bottom: 100px; */
-          background-color: #f2ede9;
-        "
-      >
+      <div class="flex justify-between mt-80 padding-y research">
         <div class="w-1/2">
           <h1 class="text-4xl font-semibold">
             Research <br />
@@ -131,10 +169,7 @@
       </div>
 
       <!-- Publications -->
-      <div
-        class="flex justify-between padding-y mt-10"
-        style="padding-top: 100px; padding-bottom: 100px"
-      >
+      <div class="flex justify-between padding-y mt-10">
         <div class="w-1/2">
           <h1 class="text-4xl font-semibold">Publications</h1>
         </div>
@@ -162,12 +197,7 @@
       </div>
 
       <!-- Books -->
-      <div
-        class="flex justify-between padding-y mt-10"
-        style="
-          background-color: #f1e8df;
-        "
-      >
+      <div class="flex justify-between padding-y mt-10 books">
         <div class="w-1/2">
           <h1 class="text-4xl font-semibold">Books</h1>
         </div>
@@ -195,13 +225,7 @@
       </div>
 
       <!-- Articles -->
-      <div
-        class="flex justify-between padding-y mt-10"
-        style="
-          
-          background-color: #f8f8f8;
-        "
-      >
+      <div class="flex justify-between padding-y mt-10 articles">
         <div class="w-1/2">
           <h1 class="text-4xl font-semibold">Articles</h1>
         </div>
@@ -229,38 +253,72 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer  class="flex justify-between padding-y padding-y"
-    style="
-     
-      background-color: #482a16;
-    "">
+    <footer class="flex justify-between padding-y padding-y footer">
       <div class="text-white">
-        <h1 class="text-4xl font-semibold" >
+        <h1 class="text-4xl font-semibold">
           Contact <br />
           Information
         </h1>
-        <p class="py-8 font-semibold">Department of English <br>
-          Government Teachers' Training College, Dhaka.</p>
-          <p class="font-semibold">
-            ranjitpodder67@gmail.com <br>
-            +880 1715785156
-          </p>
+        <p class="py-8 font-semibold">
+          Department of English <br />
+          Government Teachers' Training College, Dhaka.
+        </p>
+        <p class="font-semibold">
+          ranjitpodder67@gmail.com <br />
+          +880 1715785156
+        </p>
       </div>
 
       <!-- Send Messages -->
-      <div style="width: 500px;">
-        <div >
-          <input style="width: 48%; padding: 10px;"  type="text" name="first-name" placeholder="First Name" id="">
-        <input style="width:48%; padding: 10px; margin-left: 15.5px;" type="text" name="first-name" placeholder="Last Name" id="">
+      <div class="msg-section">
+        <div>
+          <input
+            class="input-wid-pad"
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            id=""
+          />
+          <input
+            class="input-wid-pad left-margin"
+            
+            type="text"
+            name="first-name"
+            placeholder="Last Name"
+            id=""
+          />
         </div>
-        <div style=" margin: 20px 0;">
-          <input style="width: 48%; padding: 10px;" type="email" name="first-name" placeholder="Email*" id="">
-        <input style="width: 48%; padding: 10px; margin-left: 15.5px;" type="text" name="first-name" placeholder="Subject" id="">
+        <div class="email-margin">
+          <input
+            class="input-wid-pad"
+            type="email"
+            name="first-name"
+            placeholder="Email*"
+            id=""
+          />
+          <input
+            class="inputs input-wid-pad left-margin"
+            type="text"
+            name="first-name"
+            placeholder="Subject"
+            id=""
+          />
         </div>
         <div>
-          <textarea style="padding: 10px; width: 100%; " placeholder="Leave Messege" name="" id="" cols="57" rows="4"></textarea>
+          <textarea
+            class="text-area"
+            placeholder="Leave Messege"
+            name=""
+            id=""
+            cols="57"
+            rows="4"
+          ></textarea>
         </div>
-        <button  class="msg-button border text-white hover:bg-white hover:text-[#482a16] font-semibold border-white  py-2 text-center">Submit</button>
+        <button
+          class="msg-button border text-white font-semibold border-white py-2 text-center"
+        >
+          Submit
+        </button>
       </div>
     </footer>
     <script src="../js/podder.js"></script>
