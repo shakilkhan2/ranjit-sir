@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ranjit Podder | About</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Style -->
+    <style>
+      /* nav */
+      .nav {
+        background-color: #482a16;
+      }
+
+      .padding-y {
+        padding: 100px 160px;
+      }
+      .msg-button {
+        width: 100%;
+        margin-top: 20px;
+      }
+      .msg-button:hover {
+        background-color: #ffff;
+        color: #482a16;
+      }
+      .cover-img {
+        background-image: url("../media/hall.jpg");
+        height: 350px;
+      }
+
+      /* research */
+      .research {
+        background-color: #f2ede9;
+      }
+      /* books */
+      .books {
+        background-color: #e9e0d7;
+      }
+
+      /* articles */
+      .articles {
+        background-color: #f8f8f8;
+      }
+
+      /* footer */
+      .footer {
+        background-color: #482a16;
+      }
+
+      .msg-section {
+        width: 500px;
+      }
+      .text-area {
+        padding: 10px;
+        width: 100%;
+      }
+      .input-wid-pad {
+        width: 48%;
+        padding: 10px;
+      }
+      .left-margin {
+        margin-left: 15.5px;
+      }
+      .email-margin {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- nav bar -->
+      <nav>
+        <div
+          class="flex justify-between items-center px-12 py-2 text-white nav"
+        >
+          <div>
+            <a class="text-4xl font-bold" href="./"
+              >Ranjit <span class="text-orange-400">Podder</span></a
+            >
+            <h2></h2>
+          </div>
+          <ul class="flex gap-12">
+            <a href="./">Home</a>
+            <a href="">Publications</a>
+            <a href="">Books</a>
+            <a href="">Articles</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- main section -->
+    <main>
+      <!-- cover -->
+      <div class="flex justify-between px-40 items-center pt-36">
+        <div>
+          <img class="w-96" src="../media/about-photo.jpg" alt="" />
+        </div>
+        <div class="w-1/2">
+          <h1 class="text-4xl font-semibold pb-4" >About</h1>
+          <p class="text-lg text-justify">
+            Dr. Ranjit Podder is an Associate Professor at the Department of
+            English Education, Govt. Teachers' Training College, Dhaka. As an
+            accomplished educational researcher, he has published 32 research
+            papers and serves as the editor of the Bangladesh Teacher Education
+            Journal (BTEJ). His research areas include English Language Teaching
+            (ELT), Assessment, Curriculum Development, Learning Theories, and
+            Adult Education. He is also deeply involved in mentoring, feedback,
+            and Assessment for Learning (AfL).
+          </p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="flex justify-between mt-40 padding-y research">
+        <div class="w-1/2">
+          <h1 class="text-4xl font-semibold">
+            Education
+          </h1>
+        </div>
+        <div class="w-1/2">
+          <ul class="list-disc  font-semibold text-xl">
+            <li>Ph.D. in Education, Dhaka University</li>
+            <li>M.Phil from the Institute of Bangladesh Studies, Rajshahi University</li>
+            <li>MA in English and BA Honours from Dhaka University</li>
+            <li>Master of Education from Canterbury University, New Zealand</li>
+            <li>MA in Education from Nottingham University, Malaysia</li>
+            <li>Postgraduate Diploma in Education from UC, New Zealand</li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+    <!-- Footer -->
+    <footer class="flex justify-between padding-y padding-y footer">
+      <div class="text-white">
+        <h1 class="text-4xl font-semibold">
+          Contact <br />
+          Information
+        </h1>
+        <p class="py-8 font-semibold">
+          Department of English <br />
+          Government Teachers' Training College, Dhaka.
+        </p>
+        <p class="font-semibold">
+          ranjitpodder67@gmail.com <br />
+          +880 1715785156
+        </p>
+      </div>
+
+      <!-- Send Messages -->
+      <div class="msg-section">
+        <div>
+          <input
+            class="input-wid-pad"
+            type="text"
+            name="first-name"
+            placeholder="First Name"
+            id=""
+          />
+          <input
+            class="input-wid-pad left-margin"
+            type="text"
+            name="first-name"
+            placeholder="Last Name"
+            id=""
+          />
+        </div>
+        <div class="email-margin">
+          <input
+            class="input-wid-pad"
+            type="email"
+            name="first-name"
+            placeholder="Email*"
+            id=""
+          />
+          <input
+            class="inputs input-wid-pad left-margin"
+            type="text"
+            name="first-name"
+            placeholder="Subject"
+            id=""
+          />
+        </div>
+        <div>
+          <textarea
+            class="text-area"
+            placeholder="Leave Messege"
+            name=""
+            id=""
+            cols="57"
+            rows="4"
+          ></textarea>
+        </div>
+        <button
+          class="msg-button border text-white font-semibold border-white py-2 text-center"
+        >
+          Submit
+        </button>
+      </div>
+    </footer>
+    <script src="../js/podder.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2f678b91de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
