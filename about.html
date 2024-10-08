@@ -8,63 +8,15 @@
 
     <!-- Custom Style -->
     <style>
-      /* nav */
-      .nav {
-        background-color: #482a16;
-      }
+      
 
       .padding-y {
         padding: 100px 160px;
       }
-      .msg-button {
-        width: 100%;
-        margin-top: 20px;
-      }
-      .msg-button:hover {
-        background-color: #ffff;
-        color: #482a16;
-      }
-      .cover-img {
-        background-image: url("./media/hall.jpg");
-        height: 350px;
-      }
+      
 
-      /* research */
-      .research {
-        background-color: #f2ede9;
-      }
-      /* books */
-      .books {
-        background-color: #e9e0d7;
-      }
+      
 
-      /* articles */
-      .articles {
-        background-color: #f8f8f8;
-      }
-
-      /* footer */
-      .footer {
-        background-color: #482a16;
-      }
-
-      .msg-section {
-        width: 500px;
-      }
-      .text-area {
-        padding: 10px;
-        width: 100%;
-      }
-      .input-wid-pad {
-        width: 48%;
-        padding: 10px;
-      }
-      .left-margin {
-        margin-left: 15.5px;
-      }
-      .email-margin {
-        margin: 20px 0;
-      }
     </style>
   </head>
   <body>
@@ -72,7 +24,7 @@
       <!-- nav bar -->
       <nav>
         <div
-          class="flex justify-between items-center px-12 py-2 text-white nav"
+          class="flex justify-between items-center px-12 py-2 text-white bg-[#482a16] nav"
         >
           <div>
             <a class="text-4xl font-bold" href="./"
@@ -82,12 +34,12 @@
           </div>
           <ul class="flex gap-8">
             <a href="./">Home</a>
-            <a href="./#r-interests">Research Interests</a>
-            <a href="./#publications">Publications</a>
-            <a href="./#books">Books</a>
-            <a href="./#articles">Articles</a>
-            <a href="./about.html">About</a>
-            <a href="./#contact">Contact</a>
+            <a href="#r-interests">Research Interests</a>
+            <a href="#publications">Publications</a>
+            <a href="#books">Books</a>
+            <a href="#articles">Articles</a>
+            <a href="/about.html">About</a>
+            <a href="#contact">Contact</a>
           </ul>
         </div>
       </nav>
@@ -95,14 +47,21 @@
     <!-- main section -->
     <main>
       <!-- cover -->
-      <div class="flex justify-between px-40 items-center pt-36">
+      <div class="flex justify-between px-40 items-center py-20">
         <div>
           <img class="w-96" src="./media/about-photo.jpg" alt="" />
         </div>
-        <div class="w-1/2">
-          <h1 class="text-4xl font-semibold pb-4">About</h1>
+        <div class="w-1/2 text-[#482a16]">
+          <div class="group pb-4">
+  <h1 class="text-4xl font-semibold relative inline-block">About
+    <span class="absolute left-0 -bottom-1 h-0.5 bg-[#482a16] w-0 group-hover:w-full transition-[width] duration-500"></span>
+  </h1>
+</div>
+
+
+
           <p class="text-lg text-justify">
-            Dr. Ranjit Podder is an Associate Professor at the Department of
+            Dr. Ranjit Podder is a Professor at the Department of
             English Education, Govt. Teachers' Training College, Dhaka. As an
             accomplished educational researcher, he has published 32 research
             papers and serves as the editor of the Bangladesh Teacher Education
@@ -115,12 +74,12 @@
       </div>
 
       <!-- Education -->
-      <div class="flex justify-between mt-40 padding-y research">
+      <div class="flex justify-between text-[#482a16] px-40 py-20 bg-slate-100 research">
         <div class="w-1/2">
           <h1 class="text-4xl font-semibold">Education</h1>
         </div>
         <div class="w-1/2">
-          <ul class="list-disc font-semibold text-xl">
+          <ul class="list-disc font-semibold text-lg">
             <li>Ph.D. in Education, Dhaka University</li>
             <li>
               M.Phil from the Institute of Bangladesh Studies, Rajshahi
@@ -135,7 +94,7 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer class="flex justify-between padding-y padding-y footer">
+    <footer id="contact" class="flex justify-between px-40 py-24 bg-[#482a16]">
       <div class="text-white">
         <h1 class="text-4xl font-semibold">
           Contact <br />
@@ -152,33 +111,33 @@
       </div>
 
       <!-- Send Messages -->
-      <div class="msg-section">
-        <div>
+      <div class=" w-[500px]">
+        <div class="w-full">
           <input
-            class="input-wid-pad"
+            class="w-[48%] p-2"
             type="text"
             name="first-name"
             placeholder="First Name"
             id=""
           />
           <input
-            class="input-wid-pad left-margin"
+            class="w-[48%] p-2 ml-[15.5px]"
             type="text"
             name="first-name"
             placeholder="Last Name"
             id=""
           />
-        </div>
-        <div class="email-margin">
+        </div class="w-full">
+        <div class="my-5">
           <input
-            class="input-wid-pad"
+            class="w-[48%] p-2"
             type="email"
             name="first-name"
             placeholder="Email*"
             id=""
           />
           <input
-            class="inputs input-wid-pad left-margin"
+            class="inputs w-[48%] p-2 ml-[15.5px]"
             type="text"
             name="first-name"
             placeholder="Subject"
@@ -187,7 +146,7 @@
         </div>
         <div>
           <textarea
-            class="text-area"
+            class=" p-2 w-full"
             placeholder="Leave Messege"
             name=""
             id=""
@@ -196,7 +155,7 @@
           ></textarea>
         </div>
         <button
-          class="msg-button border text-white font-semibold border-white py-2 text-center"
+          class="mt-5 border text-white font-semibold border-white hover:bg-white hover:text-[#482a16] py-2 text-center w-full"
         >
           Submit
         </button>
