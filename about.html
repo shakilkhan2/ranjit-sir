@@ -1,68 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ranjit Podder | About</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Custom Style -->
-    <style>
-      
-
-      .padding-y {
-        padding: 100px 160px;
-      }
-      
-
-      
-
-    </style>
   </head>
   <body>
-    <header>
+    <header class="sticky top-0 z-10">
       <!-- nav bar -->
-      <nav>
-        <div
-          class="flex justify-between items-center px-12 py-2 text-white bg-[#482a16] nav"
-        >
+      <nav class="bg-[#482a16] text-white">
+        <div class="flex justify-between items-center px-8 py-2">
+          <!-- Brand Name -->
           <div>
-            <a class="text-4xl font-bold" href="./"
+            <a class="text-3xl md:text-4xl font-bold" href="./"
               >Ranjit <span class="text-orange-400">Podder</span></a
             >
-            <h2></h2>
           </div>
-          <ul class="flex gap-8">
-            <a href="./">Home</a>
-            <a href="#r-interests">Research Interests</a>
-            <a href="#publications">Publications</a>
-            <a href="#books">Books</a>
-            <a href="#articles">Articles</a>
-            <a href="/about.html">About</a>
-            <a href="#contact">Contact</a>
+
+          <!-- Hamburger Icon for Mobile -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-4xl focus:outline-none">
+              <i class="fas fa-bars"></i>
+              <!-- Hamburger Icon -->
+            </button>
+          </div>
+
+          <!-- Nav Links -->
+          <ul id="menu" class="hidden md:flex gap-6 md:gap-8 text-lg">
+            <li><a href="./" class="hover:text-orange-400">Home</a></li>
+            <li>
+              <a href="./#r-interests" class="hover:text-orange-400"
+                >Research Interests</a
+              >
+            </li>
+            <li>
+              <a href="./#publications" class="hover:text-orange-400"
+                >Publications</a
+              >
+            </li>
+            <li><a href="./#books" class="hover:text-orange-400">Books</a></li>
+            <li>
+              <a href="./#articles" class="hover:text-orange-400">Articles</a>
+            </li>
+            <li>
+              <a href="/about.html" class="hover:text-orange-400">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-orange-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="md:hidden hidden">
+          <ul class="flex flex-col gap-4 py-4 px-8 bg-[#482a16]">
+            <li><a href="./" class="hover:text-orange-400">Home</a></li>
+            <li>
+              <a href="./#r-interests" class="hover:text-orange-400"
+                >Research Interests</a
+              >
+            </li>
+            <li>
+              <a href="./#publications" class="hover:text-orange-400"
+                >Publications</a
+              >
+            </li>
+            <li><a href="./#books" class="hover:text-orange-400">Books</a></li>
+            <li>
+              <a href="./#articles" class="hover:text-orange-400">Articles</a>
+            </li>
+            <li>
+              <a href="/about.html" class="hover:text-orange-400">About</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-orange-400">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
     <!-- main section -->
     <main>
-      <!-- cover -->
-      <div class="flex justify-between px-40 items-center py-20">
+      <div class="md:flex justify-between px-8 md:px-40 items-center md:py-20">
         <div>
-          <img class="w-96" src="./media/about-photo.jpg" alt="" />
+          <img
+            class="w-full h-full md:w-96"
+            src="./media/about-photo.jpg"
+            alt=""
+          />
         </div>
-        <div class="w-1/2 text-[#482a16]">
-          <div class="group pb-4">
-  <h1 class="text-4xl font-semibold relative inline-block">About
-    <span class="absolute left-0 -bottom-1 h-0.5 bg-[#482a16] w-0 group-hover:w-full transition-[width] duration-500"></span>
-  </h1>
-</div>
-
-
-
+        <div class="w-full md:w-1/2 text-[#482a16]">
+          <div class="group mt-4 pb-1 md:pb-4">
+            <h1 class="text-4xl font-semibold relative inline-block">
+              About
+              <span
+                class="absolute left-0 -bottom-1 h-0.5 bg-[#482a16] w-0 group-hover:w-full transition-[width] duration-500"
+              ></span>
+            </h1>
+          </div>
           <p class="text-lg text-justify">
-            Dr. Ranjit Podder is a Professor at the Department of
-            English Education, Govt. Teachers' Training College, Dhaka. As an
+            Dr. Ranjit Podder is a Professor at the Department of English
+            Education, Govt. Teachers' Training College, Dhaka. As an
             accomplished educational researcher, he has published 32 research
             papers and serves as the editor of the Bangladesh Teacher Education
             Journal (BTEJ). His research areas include English Language Teaching
@@ -74,12 +113,21 @@
       </div>
 
       <!-- Education -->
-      <div class="flex justify-between text-[#482a16] px-40 py-20 bg-slate-100 research">
-        <div class="w-1/2">
-          <h1 class="text-4xl font-semibold">Education</h1>
+      <div
+        class="md:flex justify-between text-[#482a16] px-8 md:px-40 py-20 bg-slate-100 research"
+      >
+        <div class="md:w-1/2">
+          <div class="group mt-4 pb-1 md:pb-4">
+            <h1 class="text-4xl font-semibold relative inline-block">
+              Education
+              <span
+                class="absolute left-0 -bottom-1 h-0.5 bg-[#482a16] w-0 group-hover:w-full transition-[width] duration-500"
+              ></span>
+            </h1>
+          </div>
         </div>
-        <div class="w-1/2">
-          <ul class="list-disc font-semibold text-lg">
+        <div class="w-full md:w-1/2">
+          <ul class="list-disc pl-4 font-semibold text-lg">
             <li>Ph.D. in Education, Dhaka University</li>
             <li>
               M.Phil from the Institute of Bangladesh Studies, Rajshahi
@@ -94,7 +142,10 @@
       </div>
     </main>
     <!-- Footer -->
-    <footer id="contact" class="flex justify-between px-40 py-24 bg-[#482a16]">
+    <footer
+      id="contact"
+      class="md:flex justify-between px-8 md:px-40 py-24 bg-[#482a16]"
+    >
       <div class="text-white">
         <h1 class="text-4xl font-semibold">
           Contact <br />
@@ -108,52 +159,73 @@
           ranjitpodder67@gmail.com <br />
           +880 1715785156
         </p>
+        <div class="mt-4">
+          <a href="https://scholar.google.com/citations?user=pjJImWgAAAAJ&hl=en"
+            ><i
+              title="google-scholar"
+              class="fa-brands fa-google-scholar text-4xl text-white"
+            ></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ranjit-podder/"
+            ><i
+              title="linkedin"
+              class="fa-brands fa-linkedin text-4xl text-white px-2"
+            ></i
+          ></a>
+          <a href="https://www.facebook.com/ranjit.podder.14/">
+            <i
+              title="facebook"
+              class="fa-brands fa-facebook text-4xl text-white"
+            ></i
+          ></a>
+        </div>
       </div>
 
       <!-- Send Messages -->
-      <div class=" w-[500px]">
-        <div class="w-full">
+      <div class="w-full max-w-[500px] mx-auto pt-4 md:pt-0">
+        <!-- First Name and Last Name -->
+        <div class="w-full flex flex-wrap gap-4">
           <input
-            class="w-[48%] p-2"
+            class="w-full md:w-[48%] p-2"
             type="text"
             name="first-name"
             placeholder="First Name"
-            id=""
           />
           <input
-            class="w-[48%] p-2 ml-[15.5px]"
+            class="w-full md:w-[48%] p-2"
             type="text"
-            name="first-name"
+            name="last-name"
             placeholder="Last Name"
-            id=""
-          />
-        </div class="w-full">
-        <div class="my-5">
-          <input
-            class="w-[48%] p-2"
-            type="email"
-            name="first-name"
-            placeholder="Email*"
-            id=""
-          />
-          <input
-            class="inputs w-[48%] p-2 ml-[15.5px]"
-            type="text"
-            name="first-name"
-            placeholder="Subject"
-            id=""
           />
         </div>
+
+        <!-- Email and Subject -->
+        <div class="w-full flex flex-wrap gap-4 my-5">
+          <input
+            class="w-full md:w-[48%] p-2"
+            type="email"
+            name="email"
+            placeholder="Email*"
+          />
+          <input
+            class="w-full md:w-[48%] p-2"
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          />
+        </div>
+
+        <!-- Message Textarea -->
         <div>
           <textarea
-            class=" p-2 w-full"
-            placeholder="Leave Messege"
-            name=""
-            id=""
+            class="p-2 w-full"
+            placeholder="Leave Message"
             cols="57"
             rows="4"
           ></textarea>
         </div>
+
+        <!-- Submit Button -->
         <button
           class="mt-5 border text-white font-semibold border-white hover:bg-white hover:text-[#482a16] py-2 text-center w-full"
         >
@@ -161,10 +233,25 @@
         </button>
       </div>
     </footer>
+    <!-- Java Script -->
     <script src="./js/podder.js"></script>
     <script
       src="https://kit.fontawesome.com/2f678b91de.js"
       crossorigin="anonymous"
     ></script>
+    <!-- FontAwesome for the hamburger icon -->
+    <!-- <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
