@@ -129,7 +129,7 @@
                 class="fa-brands fa-facebook text-4xl text-blue-400 md:text-white"
               ></i>
             </a>
-            <p class="pb-4 pt-2 text-justify text-lg text-gray-700">
+            <p class="pb-4 pt-2 text-justify text-lg text-[#482a16]">
               Dr. Ranjit Podder is Professor at the Department of English
               Education, Govt. Teachers' Training College, Dhaka. As an
               accomplished educational researcher, he has published 32 research
@@ -138,7 +138,7 @@
             </p>
             <a href="/about.html">
               <button
-                class="border border-black font-semibold px-3 py-2 hover:bg-sky-500 hover:text-white"
+                class="border rounded-md border-[#482a16] text-[#482a16] font-semibold px-3 py-2 hover:bg-[#482a16] hover:text-white"
               >
                 Know More
               </button>
@@ -186,7 +186,7 @@
                 class="fa-brands fa-facebook text-4xl text-blue-400"
               ></i>
             </a>
-            <p class="pb-4 pt-2 text-justify text-lg text-gray-700">
+            <p class="pb-4 pt-2 text-justify text-lg text-[#482a16]">
               Dr. Ranjit Podder is Professor at the Department of English
               Education, Govt. Teachers' Training College, Dhaka. As an
               accomplished educational researcher, he has published 32 research
@@ -195,7 +195,7 @@
             </p>
             <a href="/about.html">
               <button
-                class="border border-black font-semibold px-3 py-2 hover:bg-sky-500 hover:text-white"
+                class="border rounded-md border-[#482a16] text-[#482a16] font-semibold px-3 py-2 hover:bg-[#482a16] hover:text-white"
               >
                 Know More
               </button>
@@ -340,7 +340,7 @@
           </div>
           <a href="https://shorturl.at/vzF7S" target="_blank">
             <button
-              class="border border-black font-semibold px-3 py-2 hover:bg-sky-500 hover:text-white"
+              class="border rounded-md border-[#482a16] text-[#482a16] font-semibold px-3 py-2 hover:bg-[#482a16] hover:text-white"
             >
               View All Pulications
             </button>
@@ -379,7 +379,8 @@
               </h1>
               <a
                 href="https://www.rokomari.com/book/112801/inside-education"
-                class="border border-black font-semibold px-3 py-2 hover:bg-sky-500 hover:text-white inline-block"
+                target="_blank"
+                class="border rounded-md border-[#482a16] text-[#482a16] font-semibold px-3 py-2 hover:bg-[#482a16] hover:text-white inline-block"
               >
                 Buy Now
               </a>
@@ -397,7 +398,8 @@
               </h1>
               <a
                 href="https://shorturl.at/nbMFI"
-                class="border border-black font-semibold px-3 py-2 hover:bg-sky-500 hover:text-white inline-block"
+                target="_blank"
+                class="border rounded-md border-[#482a16] text-[#482a16] font-semibold px-3 py-2 hover:bg-[#482a16] hover:text-white inline-block"
               >
                 Buy Now
               </a>
@@ -493,20 +495,41 @@
           ranjitpodder67@gmail.com <br />
           +880 1715785156
         </p>
+        <div class="mt-4">
+          <a href="https://scholar.google.com/citations?user=pjJImWgAAAAJ&hl=en"
+            ><i
+              title="google-scholar"
+              class="fa-brands fa-google-scholar text-4xl text-white"
+            ></i
+          ></a>
+          <a href="https://www.linkedin.com/in/ranjit-podder/"
+            ><i
+              title="linkedin"
+              class="fa-brands fa-linkedin text-4xl text-white px-2"
+            ></i
+          ></a>
+          <a href="https://www.facebook.com/ranjit.podder.14/">
+            <i
+              title="facebook"
+              class="fa-brands fa-facebook text-4xl text-white"
+            ></i
+          ></a>
+        </div>
       </div>
 
       <!-- Send Messages -->
-      <div class="w-full max-w-[500px] mx-auto pt-4 md:pt-0">
+      <form action="https://formspree.io/f/mkgnwkqw"
+  method="POST" class="w-full max-w-[500px] mx-auto pt-4 md:pt-0">
         <!-- First Name and Last Name -->
         <div class="w-full flex flex-wrap gap-4">
           <input
-            class="w-full md:w-[48%] p-2"
+            class="w-full md:w-[48%] p-2 rounded-md"
             type="text"
             name="first-name"
             placeholder="First Name"
           />
           <input
-            class="w-full md:w-[48%] p-2"
+            class="w-full md:w-[48%] p-2 rounded-md"
             type="text"
             name="last-name"
             placeholder="Last Name"
@@ -516,13 +539,13 @@
         <!-- Email and Subject -->
         <div class="w-full flex flex-wrap gap-4 my-5">
           <input
-            class="w-full md:w-[48%] p-2"
+            class="w-full md:w-[48%] p-2 rounded-md"
             type="email"
             name="email"
             placeholder="Email*"
           />
           <input
-            class="w-full md:w-[48%] p-2"
+            class="w-full md:w-[48%] p-2 rounded-md"
             type="text"
             name="subject"
             placeholder="Subject"
@@ -532,22 +555,24 @@
         <!-- Message Textarea -->
         <div>
           <textarea
-            class="p-2 w-full"
+            class="p-2 w-full rounded-md"
             placeholder="Leave Message"
+            name="message"
             cols="57"
             rows="4"
           ></textarea>
         </div>
 
         <!-- Submit Button -->
-        <button
-          class="mt-5 border text-white font-semibold border-white hover:bg-white hover:text-[#482a16] py-2 text-center w-full"
+        <button type="submit"
+          class="mt-5 rounded-md border text-white font-semibold border-white hover:bg-white hover:text-[#482a16] py-2 text-center w-full"
         >
           Submit
         </button>
-      </div>
+      </form>
+      
     </footer>
-
+<p class="text-center bg-[#482a16] text-sm text-white">Crafted with care by <a class="text-orange-500" href="http://khanshakil.netlify.app" target="_blank" rel="noopener noreferrer">Shakil Khan</a></p>
     <!-- Java Script -->
     <script src="./js/podder.js"></script>
     <script
